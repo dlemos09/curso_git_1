@@ -2,3 +2,5 @@ Testando meu 1_primeiro_repo
 
 Testando o git clone
 
+Manipulando branchs, neste exemplo estou mudando de branch.
+

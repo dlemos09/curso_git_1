@@ -15,7 +15,7 @@
 
     <h3>COMANDOS GIT</h3>
     <ul>
-         <li>git init</li> <!--inicia o repositório -->
+        <li>git init</li> <!--inicia o repositório -->
         <li>git add README.md</li>
         <li>git commit -m "first commit"</li>
         <li>git branch -M main</li>
@@ -26,30 +26,42 @@
     <hr>
 
     <p>Caso tenha muitos arquivos para serem adicionados de uma só vez, utilize o comando <b> git add . </b> </p>
-    
-    <p>Após realizar o git add ou alterar um código, é importante realizar o "git commit" para salvar o documento no servidor.  <b> Lembre-se, cada commit é fundamental para informar o que foi alterado. </b> </p>
-   
-    <p>Caso queira realizar o commit a mais de um arquivo, utilize o comando <b> git commit -a -m</b> ou use apenas o <span class="git_commit_-m">git commit -m</span> se for para apenas um código</p>
-   
+
+    <p>Após realizar o git add ou alterar um código, é importante realizar o "git commit" para salvar o documento no
+        servidor. <b> Lembre-se, cada commit é fundamental para informar o que foi alterado. </b> </p>
+
+    <p>Caso queira realizar o commit a mais de um arquivo, utilize o comando <b> git commit -a -m</b> ou use apenas o
+        <span class="git_commit_-m">git commit -m</span> se for para apenas um código</p>
+
     <p>Caso queira "puxar" o arquivo do github para seu servidor locar, utilize o comando <b> git pull</b> </p>
-   
-    <p>O ato de baixar um repositório de um servidor remoto é chamado de <b>clonar repositório</b>, utilize o comando <b> git clone</b>. Lembrando que não é usado com muita frequência, apenas quando estamos entrando em um novo projeto. </p>
-   
+
+    <p>O ato de baixar um repositório de um servidor remoto é chamado de <b>clonar repositório</b>, utilize o comando
+        <b> git clone</b>. Lembrando que não é usado com muita frequência, apenas quando estamos entrando em um novo
+        projeto. </p>
+
     <p>Para remover um documento ou uma linha de código com o git, utilize o comando <b> git rm</b>. </p>
 
-    <p>Para visualizar todo o histórico do seu código, utilize o comando <b> git log</b>. </p> <!-- Clique a letra q para sair do git log no terminal -->
+    <p>Para visualizar todo o histórico do seu código, utilize o comando <b> git log</b>. </p>
+    <!-- Clique a letra q para sair do git log no terminal -->
 
     <p>Para renomear ou mover um arquivo com git, utilize o comando <b>git mv</b></p>
 
     <p>O arquivo modificado pode ser retornado para o estado original, utilize o comando <b>git checkout</b> </p>
 
-   <p> Uma técnica muito utilizada é ignorar arquivos do projeto, para isso, devemos inserir um arquivo chamado <b>.gitignore </b>na raiz do projeto. Nele podemos inserir todos os arquivos que não devem entrar no versionamento. Isso é útil para arquivos gerados automaticamente ou arquivos que contêm informações sensíveis </p>
-
-   <p>Com o comando <b> git reset </b> podemos resetar as mudanças feitas. Geralmente é utilizado com a flag <span class="git_commit_-m"> --hard </span>Todas as alterações commitadas e também as pendentes serão 
-    excluídas;
+    <p> Uma técnica muito utilizada é ignorar arquivos do projeto, para isso, devemos inserir um arquivo chamado
+        <b>.gitignore </b>na raiz do projeto. Nele podemos inserir todos os arquivos que não devem entrar no
+        versionamento. Isso é útil para arquivos gerados automaticamente ou arquivos que contêm informações sensíveis
     </p>
 
- 
+    <p>Com o comando <b> git reset </b> podemos resetar as mudanças feitas. Geralmente é utilizado com a flag <span
+            class="git_commit_-m"> --hard </span>Todas as alterações commitadas e também as pendentes serão
+        excluídas;
+    </p>
+
+    <h2>Manipulando branchs</h2>
+    <p>Para visualizar uma branch, utilize o comando, <b>git branch</b>. </p>
+    <p>Para criar uma branch, utilize o comando, <b>git branch "nome da branch"</b>. </p>
+    <p>Para deletar uma branch, utilize o comando <b> git branch <span class="atencao">-d</span> </b> <span class="atencao">Atenção !! NÃO É COMUM DELETAR BRANCHS</span></p>
 </body>
 
 </html>

@@ -4,3 +4,7 @@ Testando o git clone
 
 Manipulando branchs, neste exemplo estou mudando de branch.
 
+a
+branch
+v
+clone

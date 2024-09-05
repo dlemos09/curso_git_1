@@ -61,34 +61,57 @@
     </p>
 
     <h2>Manipulando branchs</h2>
-   
+
     <p> Para visualizar uma branch, utilize o comando, <b>git branch</b>. </p>
-   
+
     <p> Para criar uma branch, utilize o comando, <b>git branch "nome da branch"</b>. </p>
-   
-    <p> Para deletar uma branch, utilize o comando <b> git branch <span class="atencao">-d</span> </b> <span class="atencao">Atenção !! NÃO É COMUM DELETAR BRANCHS</span>.</p>
-   
-    <p> Para mudar de branch, utilize o comando <b>git checkout</b>. Mas, se quiser criar uma branch e mudar ao mesmo tempo, use o comando <b>git checkout -b "nome da branch"</b>.</p>
+
+    <p> Para deletar uma branch, utilize o comando <b> git branch <span class="atencao">-d</span> </b> <span
+            class="atencao">Atenção !! NÃO É COMUM DELETAR BRANCHS</span>.</p>
+
+    <p> Para mudar de branch, utilize o comando <b>git checkout</b>. Mas, se quiser criar uma branch e mudar ao mesmo
+        tempo, use o comando <b>git checkout -b "nome da branch"</b>.</p>
 
     <p> Para unir duas branchs, use o comando <b>git merge</b>.</p>
 
-     <h2>Trabalhando com stash</h2>
+    <h2>Trabalhando com stash</h2>
 
-    <p> Podemos salvar modificações atuais para prosseguir com uma outra abordagem de solução e não perder o código. Para isso, utilize o comando <b>git stash</b>.</p>
+    <p> Podemos salvar modificações atuais para prosseguir com uma outra abordagem de solução e não perder o código.
+        Para isso, utilize o comando <b>git stash</b>.</p>
 
-    <p> Podemos recuperar a stash, Para isso, utilize o comando <b>git stash list</b> e em seguida utilize o comando "git stash apply (id da stash)".</p> 
+    <p> Podemos recuperar a stash, Para isso, utilize o comando <b>git stash list</b> e em seguida utilize o comando
+        "git stash apply (id da stash)".</p>
 
-    <p>Para visualizar as mudanças que ficaram salvas no stash, utilize o comando <b> git stash show -p (id da stash)</b></p>
+    <p>Para visualizar as mudanças que ficaram salvas no stash, utilize o comando <b> git stash show -p (id da
+            stash)</b></p>
 
-    <p>Para limpar (remover) totalmente as stash, utilize o comando <b>git stash clear </b>, mas caso queira deletar apenas uma stash, utilize o comando <b>git stash drop (id da stash)</b></p>
+    <p>Para limpar (remover) totalmente as stash, utilize o comando <b>git stash clear </b>, mas caso queira deletar
+        apenas uma stash, utilize o comando <b>git stash drop (id da stash)</b></p>
 
     <h2>Utilizando Tag</h2>
 
     <p>Podemos criar tags nos branches por meio do comando <b>git tag -a (nome) -m "mensage"</b></p>
     <!-- tag é diferente do stash, serve como checkpoint de um branch -->
 
-    <p>Podemos verificar a tag com o comando <b>git show (nome da tag), e para alterar de tag <b>utilize o comando (git checkout nome_da_tag)</b></b></p>
-    
+    <p>Podemos verificar a tag com o comando <b>git show (nome da tag), e para alterar de tag <b>utilize o comando (git
+                checkout nome_da_tag)</b></b></p>
+
+    Comando sobre git tag
+
+    <p> git tag nome-da-tag </p> <!-- cria a tag -->
+    <p>git tag -a nome-da-tag -m "Mensagem da tag" </p> <!-- Criar uma Tag Anotada (Annotated Tag) -->
+    <p>git tag </p> <!-- lista todas as tags -->
+
+    <p>git show nome-da-tag</p> <!-- exibe os detalhes da tag -->
+
+    <p>git push origin nome-da-tag</p> <!--Enviar uma Tag Específica para o Repositório Remoto -->
+
+    <p>git tag -d nome-da-tag</p> <!-- Excluir uma Tag Localmente -->
+
+    <p>git push origin --delete nome-da-tag</p> <!-- Excluir uma Tag do Repositório Remoto -->
+
+
+
 </body>
 
 </html>
